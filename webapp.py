@@ -5,6 +5,29 @@ import re
 import pandas as pd
 import pickle
 
+st.set_page_config(page_title="Crop Recommendation", page_icon="https://www.flaticon.com/free-icon/apple_2779430?term=apple+check&page=1&position=9&origin=search&related_id=2779430", layout="centered", initial_sidebar_state="auto", menu_items=None)
+
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+          f"""
+          <style>
+          .stApp {{
+              background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEv-zU7IgfqGSHn46c8XnJARMEllyLfQvLhg&usqp=CAU");
+              background-size: cover
+          }}
+          </style>
+          """,
+          unsafe_allow_html=True
+      )
+set_bg_hack_url()
+
 conn = sqlite3.connect('data.db')
 c = conn.cursor()
 # DB  Functions
