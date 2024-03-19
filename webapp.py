@@ -146,6 +146,6 @@ if menu=="Login":
 if menu=="ContactUs":
     #img=Image.open("")
     #st.image(imag,width=200)
-    st.write("Name")
-    st.write("Mobile")
-    st.write("Email")
+    st.write("Name: Dhruv")
+    st.write("Mobile: 95*20***96")
+    st.write("Email: dhruv*******@gmail.com")
