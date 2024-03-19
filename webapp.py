@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import pickle
 
-st.set_page_config(page_title="Crop Recommendation", page_icon="https://www.flaticon.com/free-icon/apple_2779430?term=apple+check&page=1&position=9&origin=search&related_id=2779430", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Apple Quality Prediction", page_icon=(":apple:"), layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 def set_bg_hack_url():
     '''
@@ -19,7 +19,7 @@ def set_bg_hack_url():
           f"""
           <style>
           .stApp {{
-              background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEv-zU7IgfqGSHn46c8XnJARMEllyLfQvLhg&usqp=CAU");
+              background: url("https://w0.peakpx.com/wallpaper/273/284/HD-wallpaper-fruits-apple-fruit.jpg");
               background-size: cover
           }}
           </style>
