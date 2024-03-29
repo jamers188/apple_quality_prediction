@@ -54,13 +54,14 @@ menu=st.sidebar.selectbox("Menu",["Home","Signup","Login","ContactUs"])
 
 if menu=="Home":
     st.write("Welcome to Homepage")
-    st.text('''This project utilized Python and machine learning (ML) to predict apple quality based on 
-features like color, size, and texture. Data preprocessing involved handling missing values and encoding 
-variables. Supervised learning algorithms, including decision trees and random forests, were trained and 
-optimized to predict quality. Feature importance analysis provided insights for growers. The ML model was 
-deployed with a user interface for real-time predictions. The project showcases Python's efficacy in ML for 
-agricultural decision-making, offering stakeholders a tool to optimize apple quality control and production 
-processes, enhancing efficiency and product quality in the apple industry.''')
+    st.markdown(
+        """
+        <h2 style="color:black">Welcome to Apple Quality Prediction</h2>
+        <h1>    </h1>
+        <p align="justify">
+        <b style="color:black">This project utilized Python and machine learning (ML) to predict apple quality based on features like color, size, and texture. Data preprocessing involved handling missing values and encoding variables. Supervised learning algorithms, including decision trees and random forests, were trained and optimized to predict quality. Feature importance analysis provided insights for growers. The ML model was deployed with a user interface for real-time predictions. The project showcases Python's efficacy in ML for agricultural decision-making, offering stakeholders a tool to optimize apple quality control and production processes, enhancing efficiency and product quality in the apple industry.</p>
+        """
+        ,unsafe_allow_html=True)
 if menu=="Signup":
     f_name=st.text_input("First Name")
     l_name=st.text_input("Last Name")
